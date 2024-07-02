@@ -2,7 +2,7 @@
 
 create kafka cluster with one master and three workers
 ```
-kind create cluster --config ./kafka/kind-config.ym
+kind create cluster --config ./kafka/kind-config.yml
 ```
 
 create namespace
@@ -22,7 +22,7 @@ kafka uses topic to identify messages
 create a topic
 start k9s. get into shell of one kafka instance:
 ```
-kafka-topics.sh --create --topic my-topic --bootstrap-server kafka-svc:9092
+kafka-topics.sh --create --topic kebin-test-msg --bootstrap-server kafka-svc:9092
 ```
 
 
